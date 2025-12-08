@@ -2,12 +2,12 @@ from flask import Flask, render_template
 from controller import cardapio_controller
 from controller import api_controller
 
-app = Flask(__name__)
+app = Flask(__name__,template_floder='views')
 
 # Página inicial
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("principal.html")
 
 # Cardápios
 @app.route("/salgadas")
@@ -42,12 +42,6 @@ def tiktok():
 @app.route("/facebook")
 def facebook():
     return cardapio_controller.ir_facebook()
-
-
-app.add_url_rule("/whatsapp", "whatsapp", cardapio_controller.ir_whatsapp)
-app.add_url_rule("/instagram", "instagram", cardapio_controller.ir_instagram)
-app.add_url_rule("/tiktok", "tiktok", cardapio_controller.ir_tiktok)
-app.add_url_rule("/facebook", "facebook", cardapio_controller.ir_facebook)
 
 
 if __name__ == "__main__":

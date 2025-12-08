@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio Doce</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <h1>Tapiocas Doces</h1>
+
+    <ul>
+        {% for item in cardapio %}
+            <li>{{ item.id }} - {{ item.descricao }} - R$ {{ item.preco }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">
+        <button class="btn-voltar">Voltar</button>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+header {
+    background: #e63946;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#sobre-nos {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 28%;
+    border-radius: 10px;
+}
+
+#cardapio-botoes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d3557;
+}
+
+ul {
+    width: 60%;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.btn-voltar {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #e63946;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #b91d2e;
+}
