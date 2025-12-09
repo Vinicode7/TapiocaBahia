@@ -3,11 +3,11 @@ from model.bd import cardapio_salgado, cardapio_doce
 
 def mostrar_salgadas():
     lista = [f"{item.id} - {item.descricao} - {item.preco}" for item in cardapio_salgado]
-    return render_template("salgadas.html", cardapio=lista)
+    return render_template("salgadas.html", cardapio=cardapio_salgado)
 
 def mostrar_doces():
     lista = [f"{item.id} - {item.descricao} - {item.preco}" for item in cardapio_doce]
-    return render_template("doces.html", cardapio=lista)
+    return render_template("doces.html", cardapio=cardapio_doce)
 
 def mostrar_todos_ordenados_mais_barato():
     todos = cardapio_salgado + cardapio_doce

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.lista-salgadas {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.lista-salgadas li {
+    background: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #2b7a0b;
+}
+
+.btn-voltar {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background: #0056b3;
+}

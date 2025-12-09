@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from controller import cardapio_controller
 from controller import api_controller
 
-app = Flask(__name__,template_folder='views')
+app = Flask(__name__,template_folder='view')
 
 # Página inicial
 @app.route("/")

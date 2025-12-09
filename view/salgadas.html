@@ -2,17 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cardápio Salgado</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Tapiocas Salgadas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/salgadas.css') }}">
 </head>
 
 <body>
 
     <h1>Tapiocas Salgadas</h1>
 
-    <ul>
+    <ul class="lista-salgadas">
         {% for item in cardapio %}
-            <li>{{ item.id }} - {{ item.descricao }} - R$ {{ item.preco }}</li>
+            <li>
+                <span class="id">{{ item.id }}</span> -
+                <span class="desc">{{ item.descricao }}</span> -
+                <span class="preco">R$ {{ item.preco }}</span>
+            </li>
         {% endfor %}
     </ul>
 
