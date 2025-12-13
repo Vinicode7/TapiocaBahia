@@ -164,4 +164,13 @@ Cardapio(244, "Nutella com Coco", 25.00),
 Cardapio(245, "Nutella com Coco e Morango", 28.00),
 Cardapio(246, "Nutella com Coco, Morango e Uva", 29.00),
 Cardapio(247, "Nutella com Coco e Uva", 26.00),
+Cardapio(248, "Nutella com Morango", 27.00),
+Cardapio(249, "Nutella com Morango e Uva", 28.00),
+Cardapio(250, "Nutella com Uva", 25.00),
+Cardapio(251, "Romeu e Julieta", 19.00),
+Cardapio(252, "X Tudo Doce - Banana, Brigadeiro, Coco, Leite Condensado, Morango e Nutella", 30.00),
 ]
+
+cardapio_bebidas = ["indefinido"]
+
+cardapio_bahia = ["indefinido"]

@@ -10,19 +10,15 @@
 
     <h1>Tapiocas Salgadas</h1>
 
-    <ul class="lista-salgadas">
-        {% for item in cardapio %}
-            <li>
-                <span class="id">{{ item.id }}</span> -
-                <span class="desc">{{ item.descricao }}</span> -
-                <span class="preco">R$ {{ item.preco }}</span>
-            </li>
-        {% endfor %}
-    </ul>
+   <ul class="lista-salgadas">
+    {% for item in cardapio %}
+        <li>{{ item.id }} - {{ item.descricao }} - R$ {{ item.preco }}</li>
+    {% endfor %}
+</ul>
 
-    <a href="/">
-        <button class="btn-voltar">Voltar</button>
-    </a>
+   <a href="/">
+    <button>Voltar</button>
+</a>
 
 </body>
 </html>
