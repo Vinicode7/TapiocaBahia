@@ -12,7 +12,7 @@ def home():
     return render_template("principal.html")
 
 # Cardápios
-@app.route("/salgadas")
+@app.route("/salgadas" )
 def salgadas():
     return render_template(
         "salgadas.html",
